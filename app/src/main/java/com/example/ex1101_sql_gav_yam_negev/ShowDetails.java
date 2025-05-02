@@ -335,8 +335,6 @@ public class ShowDetails extends AppCompatActivity implements AdapterView.OnItem
 
     /**
      * on item selected in the spinner.
-     * <p>
-     *
      */
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -407,8 +405,6 @@ public class ShowDetails extends AppCompatActivity implements AdapterView.OnItem
     }
     /**
      * after the sorting of d3 the function organize the index list in order to see the right sub-information.
-     * <p>
-     *
      */
     public static void organize_after_shorting(){
         for (int i =0;i<d3helper_copy.size();i++){
@@ -422,7 +418,6 @@ public class ShowDetails extends AppCompatActivity implements AdapterView.OnItem
     }
     /**
      * organize the time frames to show the frames ond not the hour.
-     * <p>
      * @param arr not organized array
      * @return organized array
      *
@@ -439,7 +434,6 @@ public class ShowDetails extends AppCompatActivity implements AdapterView.OnItem
     }
     /**
      * check if the input is number.
-     * <p>
      * @param num random string
      * @return if the string is a number
      */
@@ -453,7 +447,6 @@ public class ShowDetails extends AppCompatActivity implements AdapterView.OnItem
     }
     /**
      * make an action on click in the switch.
-     * <p>
      * @param view switch
      */
     public void actionToDiffrence_sw(View view) {
@@ -484,8 +477,6 @@ public class ShowDetails extends AppCompatActivity implements AdapterView.OnItem
     }
     /**
      * return to the main menu
-     * <p>
-     *
      */
     public void back_to_main_menu(View view) {
         finish();

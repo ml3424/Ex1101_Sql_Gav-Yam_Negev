@@ -30,7 +30,7 @@ public class InputMeal extends AppCompatActivity {
 
     /**
      * back to last screen
-     * @param view back button
+     * @param view View
      */
     public void back_to_main_menu(View view) {
         finish();

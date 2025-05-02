@@ -79,8 +79,8 @@ public class InputCompany extends AppCompatActivity {
     }
     /**
      * check if the company Id and company Name are exist in the database
-     * @param	companyId Description	String personal Id
-     * @param companyName Description String card Id
+     * @param	companyId String personal Id
+     * @param companyName String card Id
      */
     public int isAlreadyExist(String companyId, String companyName){
         int good = 0;
@@ -114,8 +114,8 @@ public class InputCompany extends AppCompatActivity {
     }
     /**
      * read a line from the database by existing food company id
-     * @param	id Description	String food company id
-     * @return  String[]result Description include all the details  [KEY_ID, COMPANY_NUMBER, COMPANY_NAME, C_FIRST_PHONE_NUMBER, C_SECOND_PHONE_NUMBER, IS_WORKING_COMPANY, IS_WORKING_COMPANY]
+     * @param	id	String food company id
+     * @return  String[]result include all the details  [KEY_ID, COMPANY_NUMBER, COMPANY_NAME, C_FIRST_PHONE_NUMBER, C_SECOND_PHONE_NUMBER, IS_WORKING_COMPANY, IS_WORKING_COMPANY]
      */
     public String[] readById(String id){
         String[]selectionArg = {id};

@@ -88,8 +88,8 @@ public class InputWorker extends AppCompatActivity {
 
     /**
      * check if the personal id and card id are exist in the database
-     * @param	personalId Description	String personal Id
-     * @param cardId Description String card Id
+     * @param	personalId String personal Id
+     * @param cardId String card Id
      */
     public int isAlreadyExist(String personalId, String cardId){
         int good = 0;
@@ -123,8 +123,8 @@ public class InputWorker extends AppCompatActivity {
     }
     /**
      * read a line from the database by existing personal id
-     * @param	id Description	String personal Id
-     * @return  String[]result Description include all the details  [KEY_ID, PERSONAL_ID, CARD_ID, FIRST_NAME, LAST_NAME, WORKER_COMPENY, PHONE_NUMBER, IS_WORKING]
+     * @param	id String personal Id
+     * @return  String[]result include all the details  [KEY_ID, PERSONAL_ID, CARD_ID, FIRST_NAME, LAST_NAME, WORKER_COMPENY, PHONE_NUMBER, IS_WORKING]
      */
     public String[] readById(String id){
         String[]selectionArg = {id};
@@ -180,22 +180,21 @@ public class InputWorker extends AppCompatActivity {
                 finish();
             }
 
-        }else {
+        }
+        else {
             popErrorMassage();
         }
-
-
     }
     /**
      * check if the program can save data in the database.
      * by checking the length of each parameter is bigger then 0 and the id is possible (by the israeli format)
 
-     * @param	id Description	String personal Id
-     * @param	cId Description	String card id
-     * @param	fn Description	String fist name
-     * @param	ln Description	String last name
-     * @param	wc Description	String worker company
-     * @return true/false Description false - cannot save, true - can save.
+     * @param	id String personal Id
+     * @param	cId	String card id
+     * @param	fn	String fist name
+     * @param	ln	String last name
+     * @param	wc	String worker company
+     * @return true/false false - cannot save, true - can save.
      */
     public boolean check_inputs(String id, String cId, String fn, String ln, String wc){
         if (id.length() == 0 || !check_id(id) || cId.length() == 0 || fn.length() == 0 || ln.length() == 0 || wc.length() == 0 || isAlreadyExist(id,cId) !=0){
@@ -205,7 +204,7 @@ public class InputWorker extends AppCompatActivity {
     }
     /**
      * checking the id by the israeli format
-     * @param	id_num Description	String personal Id
+     * @param	id_num String personal Id
      * @return  true/false true - ok id, false - not israeli id
      */
     public boolean check_id(String id_num){
@@ -315,7 +314,7 @@ public class InputWorker extends AppCompatActivity {
      * if the code is run on mode 1 - update worker details - the process dividing to two parts:
      * part one is enter only the card and personal ids.
      * second part is show the user all the current user data in the right place and save when he click save
-     * @param	view Description	button
+     * @param	view button
      */
     public void saveWorker(View view) {
         if (mode == 0){
@@ -362,7 +361,7 @@ public class InputWorker extends AppCompatActivity {
     }
     /**
      * back to menu
-     * @param view button
+     * @param view View
      */
     public void back_to_main_menu(View view) {
         finish();
@@ -380,7 +379,7 @@ public class InputWorker extends AppCompatActivity {
 
     /**
      * handles menu item selection
-     * @param	item MenuItem
+     * @param item MenuItem
      */
     public boolean onOptionsItemSelected(MenuItem item) {
         String st = item.getTitle().toString();

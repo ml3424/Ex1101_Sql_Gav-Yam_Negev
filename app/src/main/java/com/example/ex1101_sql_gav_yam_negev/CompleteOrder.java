@@ -276,7 +276,6 @@ public class CompleteOrder extends AppCompatActivity implements AdapterView.OnIt
     /**
      * save order including checking the input and return to the main menu.
      * @param view save button
-     *
      */
     public void save_order(View view) {
         workerId = workerIdF.getText().toString();

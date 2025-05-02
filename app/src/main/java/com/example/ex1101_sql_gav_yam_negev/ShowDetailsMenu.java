@@ -21,7 +21,7 @@ public class ShowDetailsMenu extends AppCompatActivity {
      * mode 0 = show workers details
      * mode 1 = show order details
      * mode 2 = show food company details
-     * @param	view Description	button show worker details
+     * @param	view button show worker details
      */
     public void show_workers(View view) {
         Intent si = new Intent(this,ShowDetails.class);
@@ -33,7 +33,7 @@ public class ShowDetailsMenu extends AppCompatActivity {
      * mode 0 = show workers details
      * mode 1 = show order details
      * mode 2 = show food company details
-     * @param	view Description	button show order details
+     * @param	view button show order details
      */
     public void show_orders(View view) {
         Intent si = new Intent(this,ShowDetails.class);
@@ -45,7 +45,7 @@ public class ShowDetailsMenu extends AppCompatActivity {
      * mode 0 = show workers details
      * mode 1 = show order details
      * mode 2 = show food company details
-     * @param	view Description	button show food company details
+     * @param	view button show food company details
      */
     public void show_food_comp(View view) {
         Intent si = new Intent(this,ShowDetails.class);

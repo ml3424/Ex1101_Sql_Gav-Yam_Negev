@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
     /**
      * click the button will take the user to the update mode
-     * @param	view Description	button
+     * @param	view View
      */
     
     public void gotoUpdateMenu(View view) {
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
     /**
      * click the button will take the user to the show mode
-     * @param	view Description	button
+     * @param	view View
      */
     public void gotoDetailsMenu(View view) {
         Intent si = new Intent(this,ShowDetailsMenu.class);

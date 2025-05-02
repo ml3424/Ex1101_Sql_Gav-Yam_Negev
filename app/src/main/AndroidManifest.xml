@@ -21,6 +21,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".UpdateOrAdd" />
+        <activity android:name=".CompleteOrder" />
+        <activity android:name=".Credits" />
+        <activity android:name=".InputCompany" />
+        <activity android:name=".InputMeal" />
+        <activity android:name=".InputWorker" />
+        <activity android:name=".ShowDetails" />
+        <activity android:name=".ShowDetailsMenu" />
     </application>
 
 </manifest>

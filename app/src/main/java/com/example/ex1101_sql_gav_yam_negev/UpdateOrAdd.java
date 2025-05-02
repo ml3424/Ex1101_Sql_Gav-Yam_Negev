@@ -19,7 +19,7 @@ public class UpdateOrAdd extends AppCompatActivity {
      * click the button will take the user to add a new worker
      * mode 0 = add
      * mode 1 = update
-     * @param	view Description	button add worker
+     * @param	view button add worker
      */
     public void add_worker(View view) {
         Intent si = new Intent(this,InputWorker.class);
@@ -30,7 +30,7 @@ public class UpdateOrAdd extends AppCompatActivity {
      * click the button will take the user to update a worker
      * mode 0 = add
      * mode 1 = update
-     * @param	view Description	button update worker
+     * @param	view View
      */
     public void update_worker(View view) {
         Intent si = new Intent(this,InputWorker.class);
@@ -39,7 +39,7 @@ public class UpdateOrAdd extends AppCompatActivity {
     }
     /**
      * click the button will take the user to make a new order screen (input meal)
-     * @param	view Description
+     * @param	view View
      */
     public void make_new_order(View view) {
         Intent si = new Intent(this,InputMeal.class);
@@ -49,7 +49,7 @@ public class UpdateOrAdd extends AppCompatActivity {
      * click the button will take the user to add a new food company
      * mode 0 = add
      * mode 1 = update
-     * @param	view Description	button add food company
+     * @param	view View
      */
     public void add_food_company(View view) {
         Intent si = new Intent(this,InputCompany.class);
@@ -60,7 +60,7 @@ public class UpdateOrAdd extends AppCompatActivity {
      * click the button will take the user to update food company details
      * mode 0 = add
      * mode 1 = update
-     * @param	view Description
+     * @param	view View
      */
     public void update_fc_details(View view) {
         Intent si = new Intent(this,InputCompany.class);
@@ -69,7 +69,7 @@ public class UpdateOrAdd extends AppCompatActivity {
     }
     /**
      * click the button will take the user to the main menu
-     * @param	view Description
+     * @param	view View
      */
     public void back_to_main_menu(View view) {
         finish();
